@@ -4,7 +4,10 @@
 #include "Metamorphe.h"
 
 /*
-	
+
+	OPCODE						SIZE
+
+origin:
 	call	hook				5
  __	jmp		+2					2
  |	nop		*					1
@@ -34,7 +37,6 @@ void	spawn_metamorphe(DWORD address, DWORD hook, int size)
 	WriteASM(address + 0x5, (DWORD)"\xEB\x02\x90\x90", 4);
 	while (i != size)
 		WriteASM(address + i++, (DWORD)"\x90", 1);
-
 	morph_count++;
 }
 

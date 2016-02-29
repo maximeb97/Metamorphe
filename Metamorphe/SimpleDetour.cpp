@@ -3,6 +3,7 @@
 void WriteASM(DWORD dwAddy, DWORD dwASM, int len)
 {
 	unsigned long Protection;
+
 	VirtualProtect((void*)dwAddy, len, PAGE_EXECUTE_READWRITE, &Protection);
 	memcpy((void*)dwAddy, (const void*)dwASM, len);
 	VirtualProtect((void*)dwAddy, len, Protection, NULL);
@@ -10,9 +11,10 @@ void WriteASM(DWORD dwAddy, DWORD dwASM, int len)
 
 void *DetourFunction(BYTE *src, const BYTE *dst, const int len)
 {
-	BYTE *jmp = (BYTE*)malloc(len + 5);
+	BYTE *jmp;
 	DWORD dwBack;
 
+	jmp = (BYTE*)malloc(len + 5);
 	VirtualProtect(src, len, PAGE_EXECUTE_READWRITE, &dwBack);
 	memcpy(jmp, src, len);
 	jmp += len;
@@ -27,9 +29,10 @@ void *DetourFunction(BYTE *src, const BYTE *dst, const int len)
 
 void *DetourCallFunction(BYTE *src, const BYTE *dst, const int len)
 {
-	BYTE *jmp = (BYTE*)malloc(len + 5);
+	BYTE *jmp;
 	DWORD dwBack;
 
+	jmp = (BYTE*)malloc(len + 5);
 	VirtualProtect(src, len, PAGE_EXECUTE_READWRITE, &dwBack);
 	memcpy(jmp, src, len);
 	jmp += len;
