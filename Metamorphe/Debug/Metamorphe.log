@@ -1,0 +1,15 @@
+﻿La génération a démarré 14/12/2015 16:16:03.
+     1>Projet "c:\Users\betemp_a\documents\visual studio 2015\Projects\Metamorphe\Metamorphe\Metamorphe.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\betemp_a\documents\visual studio 2015\Projects\Metamorphe\Debug\Metamorphe.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"c:\users\betemp_a\documents\visual studio 2015\Projects\Metamorphe\Debug\Metamorphe.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\betemp_a\documents\visual studio 2015\Projects\Metamorphe\Debug\Metamorphe.lib" /MACHINE:X86 /DLL Debug\main.obj
+         Debug\Metamorphe.obj
+         Debug\SimpleDetour.obj
+         Metamorphe.vcxproj -> c:\users\betemp_a\documents\visual studio 2015\Projects\Metamorphe\Debug\Metamorphe.dll
+     1>Génération du projet "c:\Users\betemp_a\documents\visual studio 2015\Projects\Metamorphe\Metamorphe\Metamorphe.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:00.73
