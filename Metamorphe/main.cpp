@@ -46,7 +46,7 @@ void		MainThread()
 
 	morph_nb = 1;
 	morph_list = (DWORD*)malloc(sizeof(DWORD) * morph_nb);
-	//spawn_metamorphe(0x00F81027, (DWORD)&_my_hook, 9);
+	//spawn_metamorphe(0x00F81027, &_my_hook, 9);
 	init_metamorphe();
 }
 

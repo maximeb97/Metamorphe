@@ -29,7 +29,7 @@ hook:
 /*
 **	Spawn metamorphe on 9 bytes
 */
-void	spawn_metamorphe(DWORD address, DWORD hook, int size)
+void	spawn_metamorphe(DWORD address, void *hook, int size)
 {
 	int	i = 9;
 
